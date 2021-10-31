@@ -13,7 +13,7 @@ private:
 
 public:
 
-        Triangle(int _a,int _b,int _c): a(_a),b(_b),c(_c) // напрямую инициализируем переменные-члены класс
+        Triangle(int _a,int _b,int _c): a(_a),b(_b),c(_c) // Г­Г ГЇГ°ГїГ¬ГіГѕ ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§ГЁГ°ГіГҐГ¬ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ-Г·Г«ГҐГ­Г» ГЄГ«Г Г±Г±
         {
         }
         Triangle()
@@ -21,17 +21,17 @@ public:
 ~Triangle(){}
             void Read(){
 
-            cout << "Введите  A: ";
+            cout << "Г‚ГўГҐГ¤ГЁГІГҐ  A: ";
             cin >> a;
-            cout << "ВВедите B: ";
+            cout << "Г‚Г‚ГҐГ¤ГЁГІГҐ B: ";
             cin >> b;
-            cout << "Введите C: ";
+            cout << "Г‚ГўГҐГ¤ГЁГІГҐ C: ";
             cin >> c;
 
             }
             void Display(){
 
-            cout<<"Вы ввели A="<<a<<endl<<"Вы ввели B="<<b<<endl<<"Вы ввели C="<<c<<endl;
+            cout<<"Г‚Г» ГўГўГҐГ«ГЁ A="<<a<<endl<<"Г‚Г» ГўГўГҐГ«ГЁ B="<<b<<endl<<"Г‚Г» ГўГўГҐГ«ГЁ C="<<c<<endl;
             }
 
             double Perimeter()
@@ -55,14 +55,14 @@ return ha,hb,hc;
          }
          int Type(){
          if (a==b && b==c && c==a) {
-                cout<<"равносторонний"<<endl;
+                cout<<"Г°Г ГўГ­Г®Г±ГІГ®Г°Г®Г­Г­ГЁГ©"<<endl;
 return 0;
 }
 else{
-    cout<<"Прямоугольный"<<endl;
+    cout<<"ГЏГ°ГїГ¬Г®ГіГЈГ®Г«ГјГ­Г»Г©"<<endl;
 }
 if (a==b || b==c ||c==a) {
-         cout<<"равнобедренный"<<endl;
+         cout<<"Г°Г ГўГ­Г®ГЎГҐГ¤Г°ГҐГ­Г­Г»Г©"<<endl;
 return 0;
 }
 
@@ -70,58 +70,7 @@ return 0;
 }
 
 };
-        /*
+      
 
-
-int getA() {return a;}
-    int getB() {return b;}
-    int getC() {return c;}
-  /*  Triangle(int at, int bt, int ct)
-    {
-       at=a;
-       bt=b;
-       ct=c;
-    }
-*/
-
-/*
-void setSides()
-{   cout<<"\tSide a\t";
-        cin>>a;
-        cout<<"\tSide b:\t";
-        cin>>b;
-           cout<<"\Side c:\t";
-        cin>>c;
-
-
-    }
-
-    double getPerimeter()
-    {
-        return (a+b+c);
-    }
-    double polperimeter(){
-    this->getPerimeter()/2;
-    }
-
-    double getSquare(){
-    this->polperimeter;
-     double Square= sqrt(&polperimeter*(&polperimeter - a)*(&polperimeter - b)*(&polperimeter -c));
-
-    }
-
-    double GetHeight()
-    {
-     this->polperimeter;
-         return sqrt(4*polperimeter*((polperimeter-a)*(polperimeter-b)*(polperimeter-c))/(a*a));
-    }
-
-    static bool IsExist(int _a, int _b, int _c)
-    {
-        return ((a + b > c) && (a + c > b) && ( b+ c > a));
-    }
-
-};
-*/
 
 #endif // HEADER_H_INCLUDED
