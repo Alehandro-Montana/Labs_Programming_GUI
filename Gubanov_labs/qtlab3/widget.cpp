@@ -68,7 +68,7 @@ void Widget::SetTextBegin()
 void Widget::SetTextDis()
 {
     QString str;
-    str = "Closed";
+    str = "Off";
     lbl->setText (str);
 
     flag1->setEnabled(true);
